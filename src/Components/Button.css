@@ -1,0 +1,241 @@
+.blue-button-big{
+    background-color: #3D5675;
+    border: none;
+    border-radius: 44px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1.9px;
+    width: 226px;
+    height: 56px;
+    line-height: 18px;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    text-transform: uppercase;
+}
+
+.blue-button-big:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 44px;}
+
+    .blue-button-big:after {
+        z-index: -1;
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #3D5675;
+        left: 0;
+        top: 0;
+        border-radius: 44px;
+    }
+
+
+    .blue-button-big:hover:before {
+        opacity: 1;
+    }
+
+    .blue-button-big:active:after {
+        background: transparent;
+    }
+
+
+
+
+.white-button{
+    background-color: #fff;
+    border: none;
+    border-radius: 44px;
+    font-size: 12px;
+    font-weight: 800;
+    color: #3D5675;
+    letter-spacing: 1.9px;
+    width: 220px;
+    height: 44px;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    text-transform: uppercase;
+}
+
+
+.white-button:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 44px;}
+
+    .white-button:after {
+        z-index: -1;
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #fff;
+        left: 0;
+        top: 0;
+        border-radius: 44px;
+    }
+
+
+    .white-button:hover:before {
+        opacity: 1;
+    }
+
+    .white-button:active:after {
+        background: transparent;
+    }
+
+
+
+
+
+
+
+
+.blue-button{
+    background-color: #3D5675;
+    border: none;
+    border-radius: 44px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1.9px;
+    width: 220px;
+    height: 44px;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    text-transform: uppercase;
+}
+
+
+
+
+.blue-button:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 44px;}
+
+    .blue-button:after {
+        z-index: -1;
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #3D5675;
+        left: 0;
+        top: 0;
+        border-radius: 44px;
+    }
+
+
+    .blue-button:hover:before {
+        opacity: 1;
+    }
+
+    .blue-button:active:after {
+        background: transparent;
+    }
+
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+
+
+@media screen and (max-width: 790px){
+    .blue-button-big{
+        border-radius: 22px;
+        font-size: 10px;
+        width: 180px;
+        height: 38px;
+        
+    }
+}
+
+@media screen and (max-width: 1055px){
+    .blue-button{
+            border-radius: 22px;
+            font-size: 8px;
+            width: 180px;
+            height: 38px;
+    }
+    .white-button{
+        border-radius: 22px;
+        font-size: 8px;
+        width: 180px;
+        height: 38px;
+}
+}
+
+
+@media screen and (max-width: 1000px){
+    .blue-button{
+            border-radius: 16px;
+            width: 180px;
+            height: 24px;
+    }
+    .white-button{
+        border-radius: 16px;
+        width: 180px;
+        height: 24px;
+}
+}
+@media screen and (max-width: 600px){
+    .blue-button{
+        border-radius: 16px;
+        width: 100px;
+        height: 20px;
+        font-size: 6px;
+}
+.white-button{
+    border-radius: 16px;
+    width: 180px;
+    height: 24px;
+    font-size: 6px;
+}
+    .blue-button-big{
+        border-radius: 16px;
+        width: 140px;
+        height: 32px;
+        font-size: 6px;
+}
+}
