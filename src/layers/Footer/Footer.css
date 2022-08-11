@@ -135,3 +135,35 @@
   transform: scaleX(1);
   transform-origin: bottom left;
 }
+
+
+@media screen and (max-width: 1040px){
+  .footer{
+    gap: 10px;
+    flex-direction: column;
+    flex-wrap: wrap;}
+    .footer__column1{
+      display: none;
+}
+.footer__column2{
+  display: none;
+}
+}
+
+
+@media screen and (max-width: 450px){
+  .footer{
+    gap: 10px;
+     padding: 16px 0px 16px 16px;
+   
+  }
+}
+
+
+@media screen and (max-width: 600px){
+     .footer input {
+      width: 180px;
+      height: 24px;
+      font-size: 12px;
+     }
+}

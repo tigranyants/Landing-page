@@ -13,8 +13,7 @@ a{
     align-items: center;
     justify-content: space-between;
     padding: 0px 40px;
-  
-  
+    
 }
 
 .header__links{
@@ -100,7 +99,35 @@ a{
     }
   }
 
+
+  @media only screen and (max-width: 860px) {
+  .account{
+    display: none;
+  }
+}
  
+
+@media only screen and (max-width: 750px) {
+
+   .header{
+      height: fit-content;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding-top: 20px;
+      
+   }
+  
+   .header__links{
+       padding: 20px 0px;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+       text-align: center;
+   }
+}
 
 
  

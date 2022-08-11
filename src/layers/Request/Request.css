@@ -44,3 +44,28 @@
     border-right: 1px solid #A1A1A1;
 }
 
+
+@media screen and (max-width: 1200px){
+    .request{
+        height: 900px;
+        flex-wrap: wrap;}
+        .request__item__left{
+            border-right: none;
+            border-bottom: 1px solid #A1A1A1;
+            padding-bottom: 20px;
+            
+    }
+    .request__item{
+        padding-top: 0px;
+        height: 600px;
+    }
+}
+
+
+@media screen and (max-width: 450px){
+    .request{
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}

@@ -22,6 +22,7 @@ export function Header(props) {
         <li className="header__link"><a href="#Inspiration">Inspiration</a></li>
         <li className="header__link"><a href="#About">About</a></li>
        </ul> 
+       
        <div className='account'>
             <span>Account</span>
             <img src={Telejka} alt="" />
